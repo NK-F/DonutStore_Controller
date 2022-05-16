@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cs213_p4.OrderCoffeeController">
+   <children>
+      <VBox layoutX="14.0" layoutY="43.0" prefHeight="164.0" prefWidth="100.0">
+         <children>
+            <Label text="Size:" />
+            <ComboBox fx:id="coffee_size_comboBox" onAction="#action_comboBox_select" prefWidth="150.0" promptText="Size:" />
+         </children>
+      </VBox>
+      <Label layoutX="237.0" layoutY="21.0" text="Coffee Ordering System" />
+      <VBox layoutX="125.0" layoutY="43.0" prefHeight="200.0" prefWidth="141.0">
+         <children>
+            <Label text="Add-Ins:" />
+            <CheckBox fx:id="coffee_addin_cream" mnemonicParsing="false" onAction="#action_checkbox_selection" text="Cream" />
+            <CheckBox fx:id="coffee_addin_syrup" mnemonicParsing="false" onAction="#action_checkbox_selection" text="Syrup" />
+            <CheckBox fx:id="coffee_addin_milk" mnemonicParsing="false" onAction="#action_checkbox_selection" text="Milk" />
+            <CheckBox fx:id="coffee_addin_caramel" mnemonicParsing="false" onAction="#action_checkbox_selection" text="Caramel" />
+            <CheckBox fx:id="coffee_addin_whipped_cream" mnemonicParsing="false" onAction="#action_checkbox_selection" text="Whipped Cream" />
+         </children>
+      </VBox>
+      <Button fx:id="btn_cancel" layoutX="389.0" layoutY="354.0" mnemonicParsing="false" onAction="#action_Cancel" text="Cancel" />
+      <Button fx:id="btn_submit" layoutX="448.0" layoutY="354.0" mnemonicParsing="false" onAction="#action_Submit" text="Submit" />
+      <Button fx:id="btn_quit" layoutX="509.0" layoutY="354.0" mnemonicParsing="false" onAction="#action_quit" text="Quit" />
+      <VBox fx:id="container_mod_quantity" layoutX="415.0" layoutY="22.0" prefHeight="85.0" prefWidth="152.0" visible="false">
+         <children>
+            <Label text="Quantity:" />
+            <TextField fx:id="selected_coffee_quantity" onAction="#action_textfield_update" text="1" />
+         </children>
+      </VBox>
+      <Label fx:id="label_subtotal" layoutX="423.0" layoutY="128.0" text="Subtotal: $0.00" visible="false" />
+   </children>
+</Pane>

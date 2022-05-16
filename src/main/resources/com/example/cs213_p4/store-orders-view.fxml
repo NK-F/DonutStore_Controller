@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs213_p4.StoreOrdersController">
+   <children>
+      <Label layoutX="266.0" layoutY="29.0" text="Store Orders" />
+      <ListView fx:id="order_listView" layoutX="64.0" layoutY="110.0" prefHeight="200.0" prefWidth="424.0" />
+      <Button fx:id="btn_cancel" layoutX="240.0" layoutY="352.0" mnemonicParsing="false" onAction="#action_cancel" text="Cancel" />
+      <Button fx:id="btn_export_to_txt_file" layoutX="405.0" layoutY="352.0" mnemonicParsing="false" onAction="#action_button_export_to_txt_file" text="Export to TXT File" />
+      <Button fx:id="btn_quit" layoutX="525.0" layoutY="352.0" mnemonicParsing="false" onAction="#action_quit" text="Quit" />
+      <Button fx:id="btn_cancel_order" layoutX="499.0" layoutY="110.0" mnemonicParsing="false" onAction="#action_cancel_order" text="Cancel Order" />
+      <Button fx:id="btn_lookup_orders" layoutX="300.0" layoutY="352.0" mnemonicParsing="false" onAction="#action_lookup_orders" text="Lookup Orders" />
+   </children>
+</Pane>

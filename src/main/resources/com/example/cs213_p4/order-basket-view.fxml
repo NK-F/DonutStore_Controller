@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cs213_p4.OrderBasketController">
+   <children>
+      <Label layoutX="266.0" layoutY="32.0" text="Order Basket" />
+      <ListView fx:id="order_listView" layoutX="54.0" layoutY="100.0" prefHeight="200.0" prefWidth="424.0" />
+      <Button fx:id="btn_remove_item" layoutX="491.0" layoutY="100.0" mnemonicParsing="false" onAction="#action_remove_item" text="Remove Item" />
+      <Button fx:id="btn_cancel" layoutX="274.0" layoutY="342.0" mnemonicParsing="false" onAction="#action_cancel" text="Cancel" />
+      <Button fx:id="btn_place_order" layoutX="429.0" layoutY="342.0" mnemonicParsing="false" onAction="#action_place_order" text="Place Order" />
+      <Button fx:id="btn_quit" layoutX="515.0" layoutY="342.0" mnemonicParsing="false" onAction="#action_quit" text="Quit" />
+      <Label fx:id="label_subtotal" layoutX="493.0" layoutY="167.0" text="Subtotal: $0.00" />
+      <Label fx:id="label_tax" layoutX="493.0" layoutY="192.0" text="Tax: $0.00" />
+      <Label fx:id="label_total" layoutX="493.0" layoutY="217.0" text="Total: $0.00" />
+      <Button fx:id="btn_lookup_order" layoutX="334.0" layoutY="342.0" mnemonicParsing="false" onAction="#action_lookup_order" text="Lookup Order" />
+   </children>
+</Pane>
